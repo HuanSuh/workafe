@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#646464</color>
+    <color name="colorPrimaryDark">#5d3700</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorActivate">#0FD8F0</color>
+    <color name="colorDeactivate">@color/divider</color>
+
+    <color name="divider">#aaa</color>
+    <color name="divider_light">#d6d6d6</color>
+
+    <color name="text_gray_light">#a4a4a4</color>
+
+    <color name="alert_red">#FF6A52</color>
+    <color name="alert_red_ripple">#c24f3c</color>
+</resources>

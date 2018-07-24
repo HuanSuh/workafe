@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "883195377918",
+    "firebase_url": "https://workafe-210013.firebaseio.com",
+    "project_id": "workafe-210013",
+    "storage_bucket": "workafe-210013.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883195377918:android:19a7740dd28d55e4",
+        "android_client_info": {
+          "package_name": "com.hude.workafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883195377918-v94fs99gm7hpfajgtk2btg1va06i6sti.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hude.workafe",
+            "certificate_hash": "d312afb666f63f577ab31db79e7832d9f4d4d4a2"
+          }
+        },
+        {
+          "client_id": "883195377918-mvk40d02d63bv9o2uas2fl2g99dvqifk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4M985ul84It0WJw-VmmHC3JXJV4_KB3k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883195377918-mvk40d02d63bv9o2uas2fl2g99dvqifk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

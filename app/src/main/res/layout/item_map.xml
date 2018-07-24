@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hude.workafe.view.component.map.VuiGoogleMap
+        android:id="@+id/map_wkmap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.hude.workafe.view.component.cafeitem.CafeItemViewPager
+        android:id="@+id/map_pager"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"/>
+
+    <LinearLayout
+        android:id="@+id/map_layout_noitem"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="15dp"
+        android:elevation="5dp"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/xml_card_background"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/map_text_noitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/only_gangnam"/>
+        <Button
+            android:id="@+id/map_btn_request_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:background="@drawable/button_border"
+            android:text="@string/request_this_location"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/map_img_aim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:tint="@color/colorAccent"
+        android:src="@drawable/ic_aim"/>
+</RelativeLayout>

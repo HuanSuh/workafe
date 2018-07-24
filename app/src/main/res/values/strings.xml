@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Workafe</string>
+
+    <string name="main_backkey_msg">\'Back\' 버튼을 한번 더 누르면 종료됩니다</string>
+    <string name="confirm">확인</string>
+    <string name="cancel">취소</string>
+    <string name="adjust">적용</string>
+    <string name="close">닫기</string>
+
+    <string name="adjust_filter">필터 설정</string>
+    <string name="opened">영업중</string>
+    <string name="closed">영업종료</string>
+    <string name="failed_to_get_location">위치를 가져오지 못했습니다.</string>
+    <string name="need_permission">권한 설정이 필요한 기능입니다.</string>
+    <string name="label_phone">전화번호</string>
+    <string name="label_time">영업 시간</string>
+    <string name="show_detail"><![CDATA[상세 보기 >]]></string>
+    <string name="confirm_update">카페 리스트를 최신 정보로 업데이트 하시겠습니까?</string>
+    <string name="only_gangnam">현재 강남역 인근 지역만 서비스 중입니다.</string>
+    <string name="match_none">필터 조건에 맞는 데이터가 없습니다.</string>
+    <string name="request_this_location">이 지역 요청하기</string>
+    <string name="request_complete">요청이 완료되었습니다.</string>
+    <string name="failed_to_download">다운로드에 실패하였습니다.</string>
+    <string name="dialog_downloading">다운로드 중입니다. 잠시만 기다려 주세요.</string>
+</resources>

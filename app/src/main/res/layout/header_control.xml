@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/header_control"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <com.polyak.iconswitch.IconSwitch
+        android:id="@+id/header_control_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:isw_icon_size="22dp"
+        app:isw_default_selection="left"
+        app:isw_background_color="#fff"
+        app:isw_inactive_tint_icon_left="@color/divider"
+        app:isw_inactive_tint_icon_right="@color/divider"
+        app:isw_icon_left="@drawable/ic_place"
+        app:isw_icon_right="@drawable/ic_list"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageButton
+        android:id="@+id/header_control_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:src="@drawable/ic_filter"
+        android:tint="@color/divider"
+        android:background="@drawable/xml_btn_round_border"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

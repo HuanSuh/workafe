@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_cafe_detail"
+    android:elevation="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/item_cafe_contents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="15dp">
+        <RelativeLayout
+            android:id="@+id/cafe_center_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            app:layout_constraintWidth_percent="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/cafe_text_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/cafe_text_address"/>
+
+        <TextView
+            android:id="@+id/cafe_text_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/text_gray_light"
+            android:textColorLink="@color/text_gray_light"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cafe_text_name"
+            app:layout_constraintBottom_toTopOf="@+id/cafe_layout_divider"/>
+
+        <LinearLayout
+            android:id="@+id/cafe_layout_divider"
+            android:layout_width="0dp"
+            android:layout_height="2px"
+            android:background="@color/divider"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cafe_text_address"
+            app:layout_constraintBottom_toTopOf="@+id/cafe_label_phone"
+            android:orientation="vertical"/>
+
+        <android.support.constraint.Group
+            android:id="@+id/cafe_group_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="cafe_label_phone,cafe_text_phone" />
+        <TextView
+            android:id="@+id/cafe_label_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_gray_light"
+            android:text="@string/label_phone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/cafe_center_horizontal"
+            app:layout_constraintTop_toBottomOf="@id/cafe_layout_divider"
+            app:layout_constraintBottom_toTopOf="@+id/cafe_text_phone"/>
+
+        <TextView
+            android:id="@+id/cafe_text_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textSize="13sp"
+            android:textColorLink="@color/colorPrimary"
+            android:textColor="@color/colorPrimary"
+            android:maxLines="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/cafe_center_horizontal"
+            app:layout_constraintTop_toBottomOf="@id/cafe_label_phone"
+            app:layout_constraintBottom_toTopOf="@id/cafe_label_time"/>
+
+        <android.support.constraint.Group
+            android:id="@+id/cafe_group_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="cafe_label_time,cafe_text_time" />
+        <TextView
+            android:id="@+id/cafe_label_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_gray_light"
+            android:text="@string/label_time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/cafe_center_horizontal"
+            app:layout_constraintTop_toBottomOf="@id/cafe_text_phone"
+            app:layout_constraintBottom_toTopOf="@+id/cafe_text_time"/>
+
+        <TextView
+            android:id="@+id/cafe_text_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:layout_marginTop="5dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textColor="@color/colorPrimary"
+            android:lineSpacingExtra="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/cafe_center_horizontal"
+            app:layout_constraintTop_toBottomOf="@id/cafe_label_time"/>
+
+        <ImageView
+            android:id="@+id/cafe_img_thumbnail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:minHeight="130dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@id/cafe_center_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/cafe_layout_divider"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/cafe_btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:id="@+id/cafe_layout_divider_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/divider"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:text="@string/close"
+            android:background="?android:selectableItemBackground"/>
+    </LinearLayout>
+
+</RelativeLayout>
